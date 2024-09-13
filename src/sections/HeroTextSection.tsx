@@ -21,7 +21,8 @@ const HeroTextSectionWrapper = styled.div`
     }
 
     @media (max-width: 623px) {
-        padding: 2rem 5rem;
+        padding: 2rem 4rem;
+        text-align: center;
     }
 `
 
@@ -37,6 +38,10 @@ const HeroHeading = styled.div`
         margin: 0;
         margin-bottom: 24px;
     }
+
+    @media (max-width: 500px) {
+        font-size: 15px;
+    }
 `
 
 const HeroH1 = styled.h1`
@@ -46,7 +51,7 @@ const HeroH1 = styled.h1`
     font-weight: 700;
 
     @media (max-width: 500px) {
-        font-size: 40px;
+        font-size: 30px;
     }
 `
 

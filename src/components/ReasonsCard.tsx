@@ -9,7 +9,7 @@ const ReasonsCardWrapper = styled.div`
     border-radius: 1rem;
     padding: 1.5rem;
     flex: 0 0 43%;
-
+    width: -webkit-fill-available;
 
     & h3 {
         color: rgb(255, 255, 255);

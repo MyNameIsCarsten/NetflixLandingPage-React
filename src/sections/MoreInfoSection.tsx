@@ -17,6 +17,10 @@ const MoreInfoDiv = styled.div`
     @media (max-width: 800px){
         padding: 3rem 3rem;
     }
+
+    @media (max-width: 600px){
+        flex-direction: column;
+    }
 `
 
 const InfoBox = styled.div`

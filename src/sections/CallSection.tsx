@@ -16,6 +16,11 @@ const CallWrapper = styled.span`
         display: flex;
         justify-content: center;
     }
+
+    @media (max-width: 600px){
+        flex-direction: column;
+        align-items: center;
+    }
 `
 
 const CallSection = () => {

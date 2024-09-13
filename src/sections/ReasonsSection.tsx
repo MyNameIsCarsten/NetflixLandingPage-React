@@ -16,8 +16,10 @@ const ReasonsWrapper = styled.div`
 
 const CardWrapper = styled.div`
     display: flex;
+    flex-direction: column;
     gap: 1rem;
     flex-wrap: wrap;
+    align-items: center;
 `
 
 const ReasonsSection = () => {
