@@ -54,6 +54,11 @@ Error generating stack: `+i.message+`
         display: flex;
         justify-content: center;
     }
+
+    @media (max-width: 600px){
+        flex-direction: column;
+        align-items: center;
+    }
 `,Ip=()=>s.jsxs(Rp,{children:["Fragen?  Einfach anrufen:",s.jsx("a",{href:"tel:0800-000-9677",children:"0800-000-9677"})]}),Ap=N.div`
     dispaly: flex;
     flex-direction: column;
@@ -152,6 +157,9 @@ Error generating stack: `+i.message+`
   }
 `,Js=({options:e,value:t,onChange:n,icon:r})=>{const o=i=>{n(i.target.value)};return s.jsxs(Kp,{children:[r&&r,s.jsx(Yp,{onChange:o,value:t,children:e.map(i=>s.jsx("option",{value:i.value,children:i.label},i.value))})]})},lf=()=>{const[e,t]=Ze.useState("de-DE"),n=[{label:"Deutsch",value:"de-DE"},{label:"English",value:"en-DE"}];return s.jsx(Js,{options:n,value:e,onChange:t,icon:s.jsx("svg",{xmlns:"http://www.w3.org/2000/svg",fill:"none",role:"img",viewBox:"0 0 16 16",width:"16",height:"16","data-icon":"LanguagesSmall","aria-hidden":"true",children:s.jsx("path",{fillRule:"evenodd",clipRule:"evenodd",d:"M10.7668 5.33333L10.5038 5.99715L9.33974 8.9355L8.76866 10.377L7.33333 14H9.10751L9.83505 12.0326H13.4217L14.162 14H16L12.5665 5.33333H10.8278H10.7668ZM10.6186 9.93479L10.3839 10.5632H11.1036H12.8856L11.6348 7.2136L10.6186 9.93479ZM9.52722 4.84224C9.55393 4.77481 9.58574 4.71045 9.62211 4.64954H6.41909V2H4.926V4.64954H0.540802V5.99715H4.31466C3.35062 7.79015 1.75173 9.51463 0 10.4283C0.329184 10.7138 0.811203 11.2391 1.04633 11.5931C2.55118 10.6795 3.90318 9.22912 4.926 7.57316V12.6667H6.41909V7.51606C6.81951 8.15256 7.26748 8.76169 7.7521 9.32292L8.31996 7.88955C7.80191 7.29052 7.34631 6.64699 6.9834 5.99715H9.06968L9.52722 4.84224Z",fill:"currentColor"})})})},Xp=N.div`
     padding: 3rem 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     & div {
         max-width: 8rem;
@@ -161,6 +169,10 @@ Error generating stack: `+i.message+`
         color: rgba(255, 255, 255, 0.7);
         font-size: 1.1rem;
         font-weight: 400;
+    }
+
+    @media (max-width: 600px){
+      padding: 3rem 5rem;
     }
 `,Jp=()=>s.jsxs(Xp,{children:[s.jsx(lf,{}),s.jsx("p",{children:"Netflix Deutschland"})]}),qp="/NetflixLandingPage-React/assets/hero-background-NDRZ3Ur6.jpg",bp=N.a`
     display: flex;    
@@ -295,7 +307,8 @@ Error generating stack: `+i.message+`
     }
 
     @media (max-width: 623px) {
-        padding: 2rem 5rem;
+        padding: 2rem 4rem;
+        text-align: center;
     }
 `,ch=N.div`
     display: flex;
@@ -309,6 +322,10 @@ Error generating stack: `+i.message+`
         margin: 0;
         margin-bottom: 24px;
     }
+
+    @media (max-width: 500px) {
+        font-size: 15px;
+    }
 `,dh=N.h1`
     text-align: center;
     margin: 0 0 8px 0;
@@ -316,7 +333,7 @@ Error generating stack: `+i.message+`
     font-weight: 700;
 
     @media (max-width: 500px) {
-        font-size: 40px;
+        font-size: 30px;
     }
 `,fh=()=>s.jsxs(uh,{children:[s.jsxs(ch,{children:[s.jsx(dh,{children:"Unbegrenzt Filme, Serien und mehr"}),s.jsx("p",{children:"Bereits ab 4,99 €. Jederzeit kündbar."})]}),s.jsx(af,{})]}),ph=N.div`
   width: 100%;
@@ -409,6 +426,10 @@ Error generating stack: `+i.message+`
 
     @media (max-width: 800px){
         padding: 3rem 3rem;
+    }
+
+    @media (max-width: 600px){
+        flex-direction: column;
     }
 `,kh=N.div`
     align-items: center;
@@ -558,7 +579,7 @@ Error generating stack: `+i.message+`
     border-radius: 1rem;
     padding: 1.5rem;
     flex: 0 0 43%;
-
+    width: -webkit-fill-available;
 
     & h3 {
         color: rgb(255, 255, 255);
@@ -592,6 +613,8 @@ Error generating stack: `+i.message+`
 
 `,Jh=N.div`
     display: flex;
+    flex-direction: column;
     gap: 1rem;
     flex-wrap: wrap;
+    align-items: center;
 `,qh=()=>s.jsxs(Xh,{children:[s.jsx("h2",{children:"Mehr Gründe für eine Mitgliedschaft"}),s.jsxs(Jh,{children:[s.jsx(lo,{CardTitle:"Auf Ihrem Fernseher",CardText:"Streamen Sie mit Smart-TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray-Player u. v. m.",SVGStyle:"TV"}),s.jsx(lo,{CardTitle:"Serien herunterladen und offline ansehen",CardText:"Lieblingstitel ganz leicht speichern und jederzeit ansehen",SVGStyle:"Arrow"}),s.jsx(lo,{CardTitle:"Auf allen Geräten",CardText:"Sie können unbegrenzt Filme und Serien auf Ihrem Smartphone, Tablet, Laptop und Fernseher ansehen.",SVGStyle:"Glas"}),s.jsx(lo,{CardTitle:"Profile für Kinder erstellen",CardText:"Schicken Sie Kinder auf Abenteuer mit ihren Lieblingsfiguren in einem speziell auf ihre Bedürfnisse abgestimmten Kids-Bereich, der ohne Aufpreis in Ihrer Mitgliedschaft inbegriffen ist.",SVGStyle:"Faces"})]})]});function bh(){return s.jsxs(s.Fragment,{children:[s.jsx(mh,{}),s.jsx(Hh,{}),s.jsx(Eh,{}),s.jsx(qh,{}),s.jsx(Qp,{}),s.jsx(Lh,{}),s.jsx(Ip,{}),s.jsx(xh,{}),s.jsx(Jp,{})]})}Md(document.getElementById("root")).render(s.jsx(Ze.StrictMode,{children:s.jsx(bh,{})}));
